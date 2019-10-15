@@ -1,0 +1,74 @@
+﻿@model BlueBadge.Models.HotlineDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HotlineDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HotlineId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HotlineId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsTextFriendly)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsTextFriendly)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsMultilingual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsMultilingual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Details)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HotlineId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

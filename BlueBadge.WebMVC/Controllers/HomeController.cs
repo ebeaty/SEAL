@@ -9,6 +9,12 @@ namespace BlueBadge.WebMVC.Controllers
 {
     public class HomeController : Controller
     {
+
+        public ActionResult SEAL()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
